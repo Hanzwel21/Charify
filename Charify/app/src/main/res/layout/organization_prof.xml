@@ -1,0 +1,243 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background2">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notif_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:scrollbars="vertical" />
+
+    <ImageView
+        android:id="@+id/account_circle"
+        android:layout_width="387dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="12dp"
+        android:contentDescription="Charify Word Logo"
+        android:elevation="0dp"
+        android:src="@drawable/account_circle" />
+
+    <ImageView
+        android:id="@+id/redcross"
+        android:layout_width="374dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginLeft="18dp"
+        android:contentDescription="Charify Word Logo"
+        android:elevation="0dp"
+        android:src="@drawable/redcross" />
+
+    <ImageView
+        android:id="@+id/notifbell"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="359dp"
+        android:contentDescription="Charify Word Logo"
+        android:elevation="0dp"
+        android:src="@drawable/notif_bell" />
+
+    <ImageView
+        android:id="@+id/charify_two"
+        android:layout_width="138dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="Charify Word Logo"
+        android:elevation="0dp"
+        android:src="@drawable/charify_two" />
+
+    <TextView
+        android:layout_width="456dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="219dp"
+        android:layout_marginLeft="-23dp"
+        android:fontFamily="@font/nats"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0.4"
+        android:text="Philippine Red Cross-Baguio City"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginLeft="31dp"
+        android:fontFamily="@font/nats"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0.4"
+        android:text="EMAIL"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="314dp"
+        android:layout_marginLeft="31dp"
+        android:fontFamily="@font/nats"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0.4"
+        android:text="baguio@redcross.org.ph"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="349dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginLeft="31dp"
+        android:background="@drawable/line_1" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginLeft="31dp"
+        android:fontFamily="@font/nats"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0.4"
+        android:text="CONTACT NO."
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="371dp"
+        android:layout_marginLeft="31dp"
+        android:fontFamily="@font/nats"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0.4"
+        android:text="(074) 442 4036"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="409dp"
+        android:layout_marginLeft="31dp"
+        android:fontFamily="@font/nats"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0.4"
+        android:text="ADDRESS"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="268dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="426dp"
+        android:layout_marginLeft="31dp"
+        android:fontFamily="@font/nats"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0.4"
+        android:text="39 Harrison Road, Baguio City, Philippines, 2600"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="268dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="473dp"
+        android:layout_marginLeft="31dp"
+        android:fontFamily="@font/nats"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0.4"
+        android:text="Non-profit Organization"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="268dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="513dp"
+        android:layout_marginLeft="31dp"
+        android:fontFamily="@font/nats"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0.4"
+        android:text="redcross.org.ph"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <!-- Bottom Navigation Buttons -->
+    <ImageButton
+        android:id="@+id/nav_button_1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="782dp"
+        android:layout_marginLeft="31dp"
+        android:background="@drawable/rectangle_blackbg"
+        android:contentDescription="Far Left Button"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/history" />
+
+    <ImageButton
+        android:id="@+id/nav_button_2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="782dp"
+        android:layout_marginLeft="105dp"
+        android:background="@drawable/rectangle_blackbg"
+        android:contentDescription="Button Left of Center"
+        android:padding="6dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/Heart" />
+
+    <ImageButton
+        android:id="@+id/nav_button_3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="782dp"
+        android:layout_marginLeft="180dp"
+        android:background="@drawable/rectangle_blackbg"
+        android:contentDescription="Center Button"
+        android:padding="7dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/charify_green" />
+
+    <ImageButton
+        android:id="@+id/nav_button_4"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="772dp"
+        android:layout_marginLeft="252dp"
+        android:background="@drawable/rectangle_blackbg"
+        android:contentDescription="Button Right of Center"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/account_circle" />
+
+    <ImageButton
+        android:id="@+id/nav_button_5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="782dp"
+        android:layout_marginLeft="332dp"
+        android:background="@drawable/rectangle_blackbg"
+        android:contentDescription="Far Right Button"
+        android:padding="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/gear" />
+
+</RelativeLayout>
