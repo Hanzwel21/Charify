@@ -68,7 +68,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_toStartOf="@+id/ic_hexagon"
                 android:contentDescription="Notifications"
-                android:src="@drawable/icon" />
+                android:src="@drawable/notif_bell" />
 
             <ImageView
                 android:id="@+id/ic_hexagon"
