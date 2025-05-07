@@ -10,33 +10,44 @@
     <!-- Top Bar with Logo and Notification Icon -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="442dp"
+        android:layout_height="68dp"
         android:paddingHorizontal="16dp"
         android:paddingVertical="12dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/logoImage"
-            android:layout_width="114dp"
-            android:layout_height="56dp"
-            android:contentDescription="Chrify Logo"
-            android:src="@drawable/charify_two"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
             android:id="@+id/notificationIcon"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="76dp"
             android:contentDescription="Notifications"
             android:src="@drawable/notif_bell"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.523" />
+            app:layout_constraintVertical_bias="0.555" />
+
+        <ImageView
+            android:id="@+id/ic_hexagon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Options"
+            android:src="@drawable/gear_black"
+            tools:layout_editor_absoluteX="341dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:contentDescription="Back button"
+            android:outlineAmbientShadowColor="@color/black"
+            android:src="?attr/actionModeCloseDrawable" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -66,9 +77,9 @@
         android:contentDescription="Profile Image"
         android:scaleType="centerCrop"
         android:src="@drawable/account_circle"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="74dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="59dp" />
 
     <TextView
         android:id="@+id/userName"
@@ -211,84 +222,29 @@
         </LinearLayout>
     </LinearLayout>
 
-
-    <!-- Center Button -->
-
-    <!-- Left of Center -->
-
-    <!-- Far Left -->
-
-    <!-- Right of Center -->
-
-    <!-- Far Right -->
-
-    <ImageButton
-        android:id="@+id/nav_button_3"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="@drawable/black_circle_background"
-        android:contentDescription="Center Button"
-        android:padding="6dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/charify_green"
-        tools:layout_editor_absoluteX="182dp"
-        tools:layout_editor_absoluteY="847dp"
+    <View
+        android:id="@+id/hmebttnbg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="826dp"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/nav_button_2"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_toLeftOf="@id/nav_button_3"
-        android:background="@drawable/black_circle_background"
-        android:contentDescription="Button Left of Center"
-        android:padding="6dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/Heart"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="847dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/nav_button_1"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_toLeftOf="@id/nav_button_2"
-        android:background="@drawable/black_circle_background"
-        android:contentDescription="Far Left Button"
-        android:padding="5dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/hist"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="847dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/nav_button_4"
-        android:layout_width="58dp"
-        android:layout_height="58dp"
-        android:layout_toRightOf="@id/nav_button_3"
-        android:background="@drawable/black_circle_background"
-        android:contentDescription="Button Right of Center"
-        android:padding="3dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/account_circle"
-        tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="837dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/nav_button_5"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_toRightOf="@id/nav_button_4"
-        android:background="@drawable/black_circle_background"
-        android:contentDescription="Far Right Button"
-        android:padding="4dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/gear"
-        tools:layout_editor_absoluteX="344dp"
-        tools:layout_editor_absoluteY="847dp"
+        android:id="@+id/charify_bttn"
+        android:layout_width="150dp"
+        android:layout_height="129dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="Charify Word Logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/charify_word"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="812dp"
         tools:ignore="MissingConstraints" />
 
 
