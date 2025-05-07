@@ -78,6 +78,7 @@
                 android:id="@+id/org_name_input"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginTop="130dp"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/rounded_edittext"
                 android:hint="ORGANIZATION NAME"
@@ -152,13 +153,13 @@
 
             <Button
                 android:id="@+id/apply_button"
-                android:text="APPLY"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="103dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="140dp"
                 android:layout_marginTop="2dp"
                 android:backgroundTint="#000000"
-                android:textColor="#FFFFFF"
-                android:layout_marginLeft="140dp"/>
+                android:text="APPLY"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>
