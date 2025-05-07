@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_background">
+
+    <!-- Back Button -->
+
+    <TextView
+        android:layout_width="218dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-19dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="728dp"
+        android:fontFamily="@font/nats"
+        android:text="DONATIONS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="?attr/actionModeCloseDrawable"
+        android:contentDescription="Back button"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:padding="8dp"/>
+
+    <View
+        android:id="@+id/hmebttnbg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/home" />
+
+    <TextView
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="123dp"
+        android:layout_marginBottom="647dp"
+        android:fontFamily="@font/nats"
+        android:text="REQUEST's APPROVAL:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/charify_bttn"
+        android:layout_width="150dp"
+        android:layout_height="129dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-15dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Charify Word Logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/charify_word"
+        android:clickable="true"
+        />
+
+    <!-- Bell Icon -->
+
+    <!-- Charify Logo -->
+
+    <!-- Main Content Card with Notifications -->
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="132dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginBottom="856dp"
+        android:src="@drawable/charify_two" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="437dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="80dp"
+        app:cardBackgroundColor="#e8e8e8"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            android:backgroundTint="#AFAFAF"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <!-- Notification Item - Angat Buhay -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    app:cardBackgroundColor="#5CCE61"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/world_vision_in"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/white_circle"
+                            android:fontFamily="@font/nats"
+                            android:gravity="center"
+                            android:text="C"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/angat_buhay_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:text="Christan Padilla"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="297dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="1dp"
+                            android:text="Donated to UNICEF with an amount of ..."
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="86dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="265dp"
+                            android:text="APRIL 23, 2024"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Notification Item - UNICEF -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    app:cardBackgroundColor="#5CCE61"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/world_vision_icn"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/white_circle"
+                            android:fontFamily="@font/nats"
+                            android:gravity="center"
+                            android:text="K"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/unicef_title"
+                            android:layout_width="158dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="150dp"
+                            android:text="Karl Norico"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="303dp"
+                            android:layout_height="33dp"
+                            android:layout_below="@id/unicef_title"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="3dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="Donated to ANGAT BUHAY with an amo..."
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="266dp"
+                            android:text="APRIL 21, 2024"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Notification Item - World Vision Philippines -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    app:cardBackgroundColor="#5CCE61"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/world_vision_icon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/white_circle"
+                            android:gravity="center"
+                            android:text="R"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/nats"
+                            android:textSize="10sp"
+                            android:textStyle="bold"/>
+
+
+                        <TextView
+                            android:id="@+id/world_vision_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_toEndOf="@id/world_vision_icon"
+                            android:text="Rick Junio"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="308dp"
+                            android:layout_height="32dp"
+                            android:layout_below="@id/world_vision_title"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toEndOf="@id/world_vision_icon"
+                            android:text="Donated to Philippine Red Cross - Bagui..."
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="269dp"
+                            android:text="APRIL 21, 2024"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bottom Navigation -->
+</RelativeLayout>
