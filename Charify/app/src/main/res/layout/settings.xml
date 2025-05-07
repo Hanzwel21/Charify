@@ -16,8 +16,8 @@
 
         <ImageView
             android:id="@+id/back_button"
-            android:layout_width="37dp"
-            android:layout_height="37dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginRight="50dp"
             android:contentDescription="Back button"
@@ -49,7 +49,7 @@
         android:src="@drawable/gear_black" />
 
     <ImageView
-        android:id="@+id/charify_logo_black"
+        android:id="@+id/charify_logo"
         android:layout_width="215dp"
         android:layout_height="108dp"
         android:layout_below="@id/header_divider"
@@ -61,15 +61,14 @@
 
 
     <!-- Footer with Charify Logo -->
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="443dp"
+        android:layout_height="512dp"
         android:layout_above="@+id/hmebttnbg"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="-5dp"
-        android:layout_marginBottom="50dp"  
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="-121dp"
         android:orientation="vertical">
 
         <!-- Edit Profile -->
