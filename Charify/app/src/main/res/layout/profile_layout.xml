@@ -228,9 +228,9 @@
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/home"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="826dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="750dp" />
 
     <ImageButton
         android:id="@+id/charify_bttn"
@@ -243,9 +243,9 @@
         android:contentDescription="Charify Word Logo"
         android:scaleType="fitCenter"
         android:src="@drawable/charify_word"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="812dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="739dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
