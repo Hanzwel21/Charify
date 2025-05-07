@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6">
+
+    <!-- Header Section with Navigation Icons -->
+
+    <!-- Payment Amount Section -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/white_background" />
+
+    <!-- Amount Input Field with Currency Symbol -->
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <!-- Back Button -->
+
+        <!-- Profile Icon -->
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="Back"
+            android:src="@drawable/Chevron_left" />
+
+        <!-- Stethoscope Icon -->
+
+        <ImageView
+            android:id="@+id/ic_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@+id/btn_back"
+            android:contentDescription="Profile"
+            android:src="@drawable/account_circle_black" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Notification Icon -->
+        <ImageView
+            android:id="@+id/ic_health"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="50dp"
+            android:layout_toStartOf="@+id/ic_notification"
+            android:contentDescription="Health"
+            android:src="@drawable/health_care" />
+
+        <!-- Additional Icon (hexagon) -->
+        <ImageView
+            android:id="@+id/ic_notification"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_toStartOf="@+id/ic_hexagon"
+            android:contentDescription="Notifications"
+            android:src="@drawable/icon" />
+
+        <ImageView
+            android:id="@+id/ic_hexagon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Options"
+            android:src="@drawable/gear_black" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_enter_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nats"
+        android:text="ENTER AMOUNT"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_layout" />
+
+    <LinearLayout
+        android:id="@+id/amount_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#CCCCCC"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/text_enter_amount">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₱"
+            android:textSize="35sp"
+            android:textColor="#333333"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/edit_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint=""
+            android:inputType="numberDecimal"
+            android:textColor="#333333"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <!-- Payment Method Section -->
+    <TextView
+        android:id="@+id/text_payment_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nats"
+        android:text="PAYMENT METHOD"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/amount_input_layout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- GCash Payment Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_gcash"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#0079FF"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintTop_toBottomOf="@id/text_payment_method"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_maya"
+        app:layout_constraintHorizontal_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gcash_logo"
+                android:contentDescription="GCash" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="GCASH"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Maya Payment Button -->
+
+    <!-- Credit/Debit Card Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_maya"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/btn_gcash"
+        app:layout_constraintTop_toBottomOf="@id/text_payment_method">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mayalogo"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_card"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#A52A2A"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_gcash">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/credit_card"
+                android:contentDescription="Credit Card" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="CREDIT/DEBIT"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Footer with SHRIFY logo -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+        <!-- Removed marginTop -->
+
+        <!-- Bottom section with the View and icons - Modified to touch corners -->
+        <View
+            android:id="@+id/bottom_section_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:background="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/charify_view"
+            android:layout_width="150dp"
+            android:layout_height="129dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-15dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Charify Word Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/charify_word" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
