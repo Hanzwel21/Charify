@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_background">
+    <!-- Removed parent padding completely -->
+
+    <!-- Header Section with Notification Icon -->
+
+    <!-- App Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+        <!-- Removed marginTop -->
+
+        <!-- Add the elements above here -->
+
+        <!-- Bottom section with the View and icons - Modified to touch corners -->
+        <ImageView
+            android:id="@+id/bottom_section_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:background="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/charify_view"
+            android:layout_width="150dp"
+            android:layout_height="129dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-15dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Charify Word Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/charify_word" />
+
+        <RelativeLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <!-- Profile Icon -->
+            <ImageView
+                android:id="@+id/charify_logo"
+                android:layout_width="122dp"
+                android:layout_height="47dp"
+                android:contentDescription="Profile"
+                android:src="@drawable/charify_two" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Settings Icon -->
+
+            <ImageView
+                android:id="@+id/ic_hexagon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:contentDescription="Options"
+                android:src="@drawable/gear_black" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/userGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/nats"
+            android:text="WELCOME, ADMIN"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Explicitly set all margins to 0 -->
+
+        <!-- Other elements like the icons or buttons that should be above the View can go here -->
+
+
+        <!-- Bottom Button Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_below="@+id/userGreeting">
+
+            <Button
+                android:id="@+id/solo_account_button"
+                android:layout_width="315dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#5CCE61"
+                android:radius="18dp"
+                android:shape="rectangle"
+                android:text="SOLO ACCOUNT"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/org_account_button"
+                android:layout_width="315dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#5CCE61"
+                android:text="ORGANIZATION ACCOUNT"
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/org_account_button"
+                android:layout_width="315dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#5CCE61"
+                android:text="ORGANIZATION ACCOUNT"
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/org_account_button"
+                android:layout_width="315dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#5CCE61"
+                android:text="ORGANIZATION ACCOUNT"
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
