@@ -33,36 +33,57 @@
         android:elevation="0dp"
         android:src="@drawable/redcross" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/notifbell"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="317dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginLeft="359dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="Notification Bell"
-        android:background="@android:color/transparent"
-        android:src="@drawable/notif_bell"
-        android:clickable="true"
-        android:focusable="true"
-        android:elevation="0dp" />
+        android:layout_marginEnd="72dp"
+        android:contentDescription="Charify Word Logo"
+        android:elevation="0dp"
+        android:src="@drawable/notif_bell" />
 
-
-    <ImageButton
-        android:id="@+id/back"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="51dp"
+        android:layout_height="43dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="317dp"
-        android:layout_marginTop="19dp"
-        android:background="@drawable/notif_bell"
-        android:clickable="true"
-        android:contentDescription="Back Arrow"
-        android:elevation="1dp"
-        android:focusable="true"
-        />
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="50dp"
+        android:contentDescription="Back button"
+        android:outlineAmbientShadowColor="@color/black"
+        android:src="?attr/actionModeCloseDrawable" />
+
+    <ImageView
+        android:id="@+id/ic_hexagon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="27dp"
+        android:contentDescription="Options"
+        android:src="@drawable/gear_black" />
+
+    <TextView
+        android:layout_width="456dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="-23dp"
+        android:layout_marginTop="219dp"
+        android:fontFamily="@font/nats"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0.4"
+        android:text="    Philippine Red Cross-Baguio City"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="180dp"
@@ -75,21 +96,6 @@
         android:text="EMAIL"
         android:textColor="@color/black"
         android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="7dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="215dp"
-        android:fontFamily="@font/nats"
-        android:textAlignment="center"
-        android:text="Philippine Red Cross-Baguio City"
-        android:textColor="@color/black"
-        android:textSize="35dp"
         android:textStyle="bold" />
 
     <TextView
@@ -153,38 +159,6 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="180dp"
-        android:layout_height="27dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="409dp"
-        android:layout_marginBottom="358dp"
-        android:fontFamily="@font/nats"
-        android:lineSpacingExtra="0dp"
-        android:lineSpacingMultiplier="0.4"
-        android:text="TYPE OF ORGANIZATION"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="180dp"
-        android:layout_height="27dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="409dp"
-        android:layout_marginBottom="306dp"
-        android:fontFamily="@font/nats"
-        android:lineSpacingExtra="0dp"
-        android:lineSpacingMultiplier="0.4"
-        android:text="ONLINE PLATFORM"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
         android:layout_width="268dp"
         android:layout_height="24dp"
         android:layout_marginTop="426dp"
@@ -197,15 +171,11 @@
         android:textSize="15dp"
         android:textStyle="bold" />
 
-    <!-- Reference to the updated vector -->
-
     <TextView
         android:layout_width="268dp"
         android:layout_height="24dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="31dp"
         android:layout_marginTop="473dp"
-        android:layout_marginBottom="342dp"
+        android:layout_marginLeft="31dp"
         android:fontFamily="@font/nats"
         android:lineSpacingExtra="0dp"
         android:lineSpacingMultiplier="0.4"
@@ -217,10 +187,8 @@
     <TextView
         android:layout_width="268dp"
         android:layout_height="24dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="31dp"
         android:layout_marginTop="513dp"
-        android:layout_marginBottom="289dp"
+        android:layout_marginLeft="31dp"
         android:fontFamily="@font/nats"
         android:lineSpacingExtra="0dp"
         android:lineSpacingMultiplier="0.4"
@@ -235,38 +203,7 @@
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
-        android:background="@drawable/homebttnbg" />
-
-
-    <ImageButton
-        android:id="@+id/arrow"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="4dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:background="@drawable/backarrow"
-        android:contentDescription="Back Arrow"
-        android:clickable="true"
-        android:focusable="true"
-        android:elevation="1dp"
-    />
-
-
-    <ImageButton
-        android:id="@+id/settings"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="357dp"
-        android:layout_marginTop="11dp"
-        android:background="@drawable/gearblck"
-        android:clickable="true"
-        android:contentDescription="settings"
-        android:elevation="1dp"
-        android:focusable="true" />
+        android:background="@drawable/home" />
 
     <ImageButton
         android:id="@+id/charify_bttn"
@@ -281,6 +218,7 @@
         android:src="@drawable/charify_word"
         android:clickable="true"
         />
+
     <!-- Bottom Navigation Buttons -->
 
 </RelativeLayout>
