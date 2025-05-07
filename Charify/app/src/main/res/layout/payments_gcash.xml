@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/payment_p"
+        android:layout_width="414dp"
+        android:layout_height="848dp"
+        android:background="@drawable/payments_maya"
+        tools:ignore="MissingConstraints">
+
+        <!-- Background -->
+        <View
+            android:id="@+id/rectangle"
+            android:layout_width="412dp"
+            android:layout_height="470dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="448dp"
+            android:background="@drawable/rectangle_payments"
+            android:elevation="1dp" />
+
+        <!-- Top Header -->
+        <View
+            android:id="@+id/rectangle_7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/greentopbg" />
+
+        <!-- Back Arrow -->
+        <View
+            android:id="@+id/arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/backarrow" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nats"
+            android:text="Gift Aid & Donation"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <!-- One off Donation -->
+        <TextView
+            android:id="@+id/one_off_don"
+            android:layout_width="279dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="55dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nats"
+            android:gravity="center_horizontal|top"
+            android:text="One off donation only"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <!-- Donation Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="123dp"
+            android:fontFamily="@font/nats"
+            android:text="Donation"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <!-- Donation Summary -->
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="182dp"
+            android:layout_marginStart="42dp"
+            android:fontFamily="@font/nats"
+            android:text="Total donation:"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/one_off_don2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="183dp"
+            android:layout_marginEnd="37dp"
+            android:fontFamily="@font/nats"
+            android:text="₱ 200.00"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="42dp"
+            android:fontFamily="@font/nats"
+            android:text="Charity:"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/one_off_don4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="221dp"
+            android:layout_marginEnd="38dp"
+            android:fontFamily="@font/nats"
+            android:text="Asthma Patient"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <!-- Authorization Note -->
+        <TextView
+            android:id="@+id/i_agree_to_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="268dp"
+            android:fontFamily="@font/nats"
+            android:lineSpacingMultiplier="0.4"
+            android:text="The reserved authorization amount may differ from the final amount once successfully settled with the merchant."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Reference Info -->
+        <TextView
+            android:id="@+id/refid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="353dp"
+            android:fontFamily="@font/nats"
+            android:text="Reference ID"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/refid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="291dp"
+            android:layout_marginTop="352dp"
+            android:fontFamily="@font/nats"
+            android:text="1234 0987 7890"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- Terms & Conditions -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="447dp"
+            android:layout_marginEnd="-6dp"
+            android:layout_marginBottom="342dp"
+            android:elevation="6dp"
+            android:fontFamily="@font/nats"
+            android:text="Terms & conditions"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <!-- Checkboxes -->
+
+        <CheckBox
+            android:id="@+id/i_agree_to_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="495dp"
+            android:layout_marginBottom="298dp"
+            android:elevation="6dp"
+            android:fontFamily="@font/nats"
+            android:text="I agree to Charify’s terms and conditions"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!-- Donate Button -->
+
+        <CheckBox
+            android:id="@+id/i_agree_to_3"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="517dp"
+            android:layout_marginBottom="252dp"
+            android:elevation="6dp"
+            android:fontFamily="@font/nats"
+            android:lineSpacingMultiplier="0.5"
+            android:text="I am happy to be contacted by Charify via email for donating only."
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:layout_width="177dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="692dp"
+            android:layout_marginStart="121dp"
+            android:elevation="6dp">
+
+            <ImageView
+                android:id="@+id/donate_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/donate"
+                android:scaleType="fitXY"
+                android:elevation="6dp" />
+
+            <TextView
+                android:id="@+id/donate_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="DONATE"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:fontFamily="@font/nats"
+                android:elevation="6dp" />
+
+            <ImageButton
+                android:id="@+id/donate_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:contentDescription="Donate button"
+                android:elevation="6dp"
+                android:focusable="true" />
+        </FrameLayout>
+
+        <!-- Maya logo -->
+        <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="176dp"
+        android:layout_height="59dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="121dp"
+        android:layout_marginTop="624dp"
+        android:background="@drawable/gcashbg"
+        android:elevation="4dp" />
+
+        <!-- GCash Label -->
+
+        <ImageView
+            android:id="@+id/gcash_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="630dp"
+            android:elevation="4dp"
+            android:src="@drawable/gcash_logo" />
+
+        <TextView
+            android:id="@+id/gcash"
+            android:layout_width="96dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="620dp"
+            android:elevation="4dp"
+            android:fontFamily="@font/nats"
+            android:gravity="top"
+            android:lineHeight="68sp"
+            android:text="@string/gcash"
+            android:textAppearance="@style/gcash"
+            android:textSize="29dp" />
+
+        <TextView
+            android:id="@+id/agree"
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="517dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="14dp"
+            android:elevation="6dp"
+            android:fontFamily="@font/nats"
+            android:lineSpacingMultiplier="0.4"
+            android:text="By using our services, you agree to pay all fees and charges associated with your transactions through the app. All payments are processed securely via our authorized payment partners."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
