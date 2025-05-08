@@ -11,149 +11,151 @@
         android:src="@drawable/white_background"
         android:contentDescription="@null" />
 
-    <LinearLayout
+    <!-- Added ScrollView here (only change made) -->
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:layout_marginBottom="16dp">
-
-            <ImageView
-                android:id="@+id/back_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="?attr/actionModeCloseDrawable"
-                android:contentDescription="@null" />
-
-            <TextView
-                android:id="@+id/welcome_text"
-                android:layout_width="363dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:fontFamily="@font/nats"
-                android:text="APPLY YOUR"
-                android:textColor="#000000"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                android:layout_marginTop="0dp"/>
-
-
-        </LinearLayout>
-        <TextView
-            android:id="@+id/welcome2_text"
-            android:layout_width="363dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:fontFamily="@font/nats"
-            android:text="   ORGANIZATION IN"
-            android:textColor="#000000"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            android:layout_marginTop="-60dp"
-            android:layout_marginLeft="50sp"/>
-
-        <ImageView
-            android:id="@+id/myImageView"
-            android:layout_width="wrap_content"
-            android:layout_height="151dp"
-            android:src="@drawable/charify_two"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="-60dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-
-            <EditText
-                android:id="@+id/org_name_input"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="130dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rounded_edittext"
-                android:fontFamily="@font/nats"
-                android:gravity="center_vertical|start"
-                android:hint="ORGANIZATION NAME"
-                android:inputType="text"
-                android:paddingStart="24dp"
-                android:paddingEnd="24dp"
-                android:textColor="#000000"
-                android:textColorHint="#000000"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/addrs_input"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rounded_edittext"
-                android:fontFamily="@font/nats"
-                android:gravity="center_vertical|start"
-                android:hint="ADDRESS"
-                android:inputType="textPostalAddress"
-                android:paddingStart="24dp"
-                android:paddingEnd="24dp"
-                android:textColor="#000000"
-                android:textColorHint="#000000"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/email_org_input"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rounded_edittext"
-                android:fontFamily="@font/nats"
-                android:gravity="center_vertical|start"
-                android:hint="CONTACT NO."
-                android:inputType="textEmailAddress"
-                android:paddingStart="24dp"
-                android:paddingEnd="24dp"
-                android:textColor="#000000"
-                android:textColorHint="#000000"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-
-
-            <EditText
-                android:id="@+id/email_org_input2"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rounded_edittext"
-                android:fontFamily="@font/nats"
-                android:gravity="center_vertical|start"
-                android:hint="EMAIL"
-                android:inputType="textEmailAddress"
-                android:paddingStart="24dp"
-                android:paddingEnd="24dp"
-                android:textColor="#000000"
-                android:textColorHint="#000000"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:orientation="horizontal">
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="?attr/actionModeCloseDrawable"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/welcome_text"
+                    android:layout_width="363dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/nats"
+                    android:text="APPLY YOUR"
+                    android:textColor="#000000"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="0dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/welcome2_text"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/nats"
+                android:text="   ORGANIZATION IN"
+                android:textColor="#000000"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_marginTop="-60dp"
+                android:layout_marginLeft="50sp"/>
+
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="151dp"
+                android:src="@drawable/charify_two"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="-60dp" />
+
+            <RelativeLayout
+                android:layout_width="359dp"
+                android:layout_height="504dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/org_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginBottom="424dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:fontFamily="@font/nats"
+                    android:gravity="center_vertical|start"
+                    android:hint="ORGANIZATION NAME"
+                    android:inputType="text"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/addrs_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="355dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:fontFamily="@font/nats"
+                    android:gravity="center_vertical|start"
+                    android:hint="ADDRESS"
+                    android:inputType="textPostalAddress"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/email_org_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="287dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:fontFamily="@font/nats"
+                    android:gravity="center_vertical|start"
+                    android:hint="CONTACT NO."
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/email_org_input2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="218dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:fontFamily="@font/nats"
+                    android:gravity="center_vertical|start"
+                    android:hint="EMAIL"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/prps_input"
                     android:layout_width="match_parent"
                     android:layout_height="113dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="92dp"
                     android:background="@drawable/rounded_edittext"
                     android:fontFamily="@font/nats"
                     android:gravity="center_vertical|start"
@@ -166,17 +168,26 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/apply_button"
-                android:layout_width="103dp"
-                android:layout_height="63dp"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="2dp"
-                android:backgroundTint="#000000"
-                android:text="APPLY"
-                android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/apply_button"
+                    android:layout_width="103dp"
+                    android:layout_height="63dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="#000000"
+                    android:text="APPLY"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 </FrameLayout>
