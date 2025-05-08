@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="0dp"
+        android:background="#BBBBBB">
+
+        <!-- Top Bar with Back Button and Logo -->
+        <RelativeLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#999999"
+            android:paddingVertical="16dp">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Back"
+                android:src="@drawable/back_button" />
+
+
+            <!-- HEALTH Text with Icon -->
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="87dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nats"
+                    android:text="HEALTH"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Health Icon"
+                    android:src="@drawable/health_care" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topBar"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="16dp"
+            android:background="#F5F5F5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Donation Item 1 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp">
+
+                    <!-- Donation Image 1 -->
+                    <ImageView
+                        android:id="@+id/donationImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:contentDescription="Healthcare Service Image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/charity1" />
+
+                    <!-- Donation Title 1 -->
+                    <TextView
+                        android:id="@+id/donationTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/donationImage1"
+                        android:layout_marginTop="8dp"
+                        android:text="Donation for healthcare service"
+                        android:fontFamily="@font/nats"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!-- Progress Bar Container (to position goal amount) -->
+                    <RelativeLayout
+                        android:id="@+id/progressBarContainer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/donationTitle1"
+                        android:layout_marginTop="8dp">
+
+                        <!-- Progress Bar 1 -->
+                        <ProgressBar
+                            android:id="@+id/progressBar1"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:progress="25"
+                            android:progressDrawable="@drawable/fat_progress_bar"
+                            android:minHeight="25dp"
+                            android:maxHeight="25dp" />
+
+                        <!-- Goal Amount Text (inside progress bar) -->
+                        <TextView
+                            android:id="@+id/goalAmount1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:text="₱ 100,000"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <!-- Current Amount Text (below progress bar) -->
+                    <TextView
+                        android:id="@+id/currentAmount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progressBarContainer1"
+                        android:layout_marginTop="4dp"
+                        android:text="₱ 25,039.00"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <!-- Donation Item 2 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp">
+
+                    <!-- Donation Image 2 -->
+                    <ImageView
+                        android:id="@+id/donationImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:contentDescription="Prevent Starvation Image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/charity2" />
+
+                    <!-- Donation Title 2 -->
+                    <TextView
+                        android:id="@+id/donationTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/donationImage2"
+                        android:layout_marginTop="8dp"
+                        android:text="Donation to prevent starvation"
+                        android:fontFamily="@font/nats"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <!-- Progress Bar Container (to position goal amount) -->
+                    <RelativeLayout
+                        android:id="@+id/progressBarContainer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/donationTitle2"
+                        android:layout_marginTop="8dp">
+
+                        <!-- Progress Bar 2 -->
+                        <ProgressBar
+                            android:id="@+id/progressBar2"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:progress="60"
+                            android:progressDrawable="@drawable/fat_progress_bar"
+                            android:minHeight="25dp"
+                            android:maxHeight="25dp" />
+
+                        <!-- Goal Amount Text (inside progress bar) -->
+                        <TextView
+                            android:id="@+id/goalAmount2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:text="₱ 75,000"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <!-- Current Amount Text (below progress bar) -->
+                    <TextView
+                        android:id="@+id/currentAmount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progressBarContainer2"
+                        android:layout_marginTop="4dp"
+                        android:text="₱ 45,000.00"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
