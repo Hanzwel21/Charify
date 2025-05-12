@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/education"
+        android:layout_width="412dp"
+        android:layout_height="910dp"
+        android:background="@drawable/education_donate"
+        android:clipToOutline="true"
+        tools:ignore="MissingConstraints">
+
+        <!-- Green Header Background -->
+        <View
+            android:id="@+id/rectangle_7"
+            android:layout_width="721dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="-123dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginEnd="-178dp"
+            android:background="@drawable/rectangle_green" />
+
+        <!-- Back Arrow -->
+        <ImageButton
+            android:id="@+id/arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/backarrow"
+            android:contentDescription="Back Arrow" />
+
+        <!-- Charify Word Logo -->
+        <ImageView
+            android:id="@+id/charify_wor"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/charify_word"
+            android:elevation="4dp" />
+
+        <!-- Charify Logo Icon -->
+        <ImageView
+            android:id="@+id/charify_log"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="182dp"
+            android:layout_marginTop="99dp"
+            android:background="@drawable/charify_logo_green"
+            android:elevation="20dp" />
+
+        <!-- Education Title -->
+        <TextView
+            android:id="@+id/edu_ation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="84dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/nats"
+            android:text="EDU   ATION"
+            android:textAppearance="@style/edu_ation"
+            android:textStyle="bold" />
+
+        <!-- Background image layer -->
+        <ImageView
+            android:id="@+id/image_66"
+            android:layout_width="470dp"
+            android:layout_height="313dp"
+            android:layout_marginStart="-28dp"
+            android:layout_marginTop="79dp"
+            android:background="@drawable/image66" />
+
+        <!-- Overlay rectangle for text readability -->
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="412dp"
+            android:layout_height="314dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="85dp"
+            android:background="@drawable/rectangle_1" />
+
+        <!-- Text about access to education -->
+
+        <!-- Background lower design block -->
+        <TextView
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="18dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/nats"
+            android:lineSpacingMultiplier="0.4"
+            android:text="Millions of children around the world still lack access to basic education due to poverty, conflict, or remote living conditions. We believe that every child deserves the opportunity to learn, grow, and create a better future."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/rectangle_2"
+            android:layout_width="535dp"
+            android:layout_height="171dp"
+            android:layout_marginStart="-60dp"
+            android:layout_marginTop="535dp"
+            android:layout_marginEnd="-63dp"
+            android:background="@drawable/rectangle_2" />
+
+        <!-- Image 67 - lower background illustration -->
+        <ImageView
+            android:id="@+id/image_67"
+            android:layout_width="412dp"
+            android:layout_height="274dp"
+            android:layout_marginTop="431dp"
+            android:background="@drawable/image67" />
+
+        <!-- Donation encouragement text -->
+
+        <!-- Donate text overlay -->
+        <TextView
+            android:layout_width="406dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="95dp"
+            android:fontFamily="@font/nats"
+            android:lineSpacingMultiplier="0.4"
+            android:text="Together, we can break the cycle of poverty and empower future generations through education."
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/donate_text"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="165dp"
+            android:layout_marginBottom="199dp"
+            android:elevation="40dp"
+            android:fontFamily="@font/nats"
+            android:gravity="center"
+            android:text="DONATE"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Transparent Donate button -->
+        <ImageButton
+            android:id="@+id/donate_button"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="165dp"
+            android:layout_marginBottom="200dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="Donate button"
+            android:elevation="200dp"
+            android:focusable="true" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
