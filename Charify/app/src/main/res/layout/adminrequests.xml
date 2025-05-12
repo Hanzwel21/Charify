@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="123dp"
-        android:layout_marginBottom="647dp"
+        android:layout_marginBottom="624dp"
         android:fontFamily="@font/nats"
         android:text="REQUEST's APPROVAL:"
         android:textAlignment="center"
@@ -52,12 +52,6 @@
         android:src="@drawable/charify_word"
         android:clickable="true"
         />
-
-    <!-- Bell Icon -->
-
-    <!-- Charify Logo -->
-
-    <!-- Main Content Card with Notifications -->
 
     <ImageView
         android:id="@+id/myImageView"
@@ -80,7 +74,6 @@
         app:cardCornerRadius="20dp"
         app:cardElevation="4dp">
 
-
         <!-- Scrollable Content -->
         <ScrollView
             android:layout_width="match_parent"
@@ -88,275 +81,16 @@
             android:backgroundTint="#AFAFAF"
             android:fillViewport="true">
 
-
             <LinearLayout
+                android:id="@+id/organization_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="8dp">
 
-                <!-- Notification Item - Angat Buhay -->
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="8dp"
-                    app:cardBackgroundColor="#5CCE61"
-                    app:cardCornerRadius="16dp"
-                    app:cardElevation="0dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="68dp"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/angat_buhay_icon"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_centerVertical="true"
-                            android:src="@drawable/kid" />
-
-                        <TextView
-                            android:id="@+id/angat_buhay_title"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_toEndOf="@id/angat_buhay_icon"
-                            android:text="CHILDREN ORPHANAGE"
-                            android:textColor="#000000"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView2"
-                            android:layout_width="167dp"
-                            android:layout_height="30dp"
-                            android:layout_below="@id/angat_buhay_title"
-                            android:layout_marginStart="8dp"
-                            android:layout_toEndOf="@id/angat_buhay_icon"
-                            android:text="Good Day! Mr. Arnold: your donation is currently being processed..."
-                            android:textColor="#FFFFFF"
-                            android:textSize="9sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="147dp"
-                            android:text="APRIL 23, 2024"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/accept"
-                            android:layout_width="95dp"
-                            android:layout_height="19dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="253dp"
-                            android:background="@drawable/accept"
-                            android:gravity="center"
-                            android:fontFamily="@font/nats"
-                            android:text="ACCEPT"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:id="@+id/rectangle_1"
-                            android:layout_width="96dp"
-                            android:layout_height="19dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginLeft="255dp"
-                            android:layout_marginBottom="1dp"
-                            android:background="@drawable/reject"
-                            android:gravity="center"
-                            android:fontFamily="@font/nats"
-                            android:text="REJECT"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold"
-                            android:textAlignment="center"/>
-
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <!-- Notification Item - UNICEF -->
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="8dp"
-                    app:cardBackgroundColor="#5CCE61"
-                    app:cardCornerRadius="16dp"
-                    app:cardElevation="0dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="69dp"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/unicef_icon"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_centerVertical="true"
-                            android:src="@drawable/tree" />
-
-                        <TextView
-                            android:id="@+id/unicef_title"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_toEndOf="@id/unicef_icon"
-                            android:text="NATURE'S CARE"
-                            android:textColor="#000000"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="169dp"
-                            android:layout_height="29dp"
-                            android:layout_below="@id/unicef_title"
-                            android:layout_marginStart="8dp"
-                            android:layout_toEndOf="@id/unicef_icon"
-                            android:text="Good Day! Mr. Arnold: your donation is currently being processed..."
-                            android:textColor="#FFFFFF"
-                            android:textSize="9sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="134dp"
-                            android:text="APRIL 21, 2024"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/accept"
-                            android:layout_width="95dp"
-                            android:layout_height="19dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="253dp"
-                            android:background="@drawable/accept"
-                            android:fontFamily="@font/nats"
-                            android:gravity="center"
-                            android:text="ACCEPT"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/rectangle_1"
-                            android:layout_width="96dp"
-                            android:layout_height="19dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginLeft="255dp"
-                            android:layout_marginBottom="1dp"
-                            android:background="@drawable/reject"
-                            android:fontFamily="@font/nats"
-                            android:gravity="center"
-                            android:text="REJECT"
-                            android:textAlignment="center"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <!-- Notification Item - World Vision Philippines -->
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="8dp"
-                    app:cardBackgroundColor="#5CCE61"
-                    app:cardCornerRadius="16dp"
-                    app:cardElevation="0dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="68dp"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/world_vision_icon"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_centerVertical="true"
-                            android:src="@drawable/cebu" />
-
-                        <TextView
-                            android:id="@+id/world_vision_title"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_toEndOf="@id/world_vision_icon"
-                            android:text="CHILDREN SHELTER OF CEBU"
-                            android:textColor="#000000"
-                            android:textSize="8sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="171dp"
-                            android:layout_height="30dp"
-                            android:layout_below="@id/world_vision_title"
-                            android:layout_marginStart="8dp"
-                            android:layout_toEndOf="@id/world_vision_icon"
-                            android:text="Good Day! Mr. Arnold: your donation is currently being processed..."
-                            android:textColor="#FFFFFF"
-                            android:textSize="9sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="159dp"
-                            android:text="APRIL 21, 2024"
-                            android:textColor="#ffffff"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/accept"
-                            android:layout_width="95dp"
-                            android:layout_height="19dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="253dp"
-                            android:background="@drawable/accept"
-                            android:fontFamily="@font/nats"
-                            android:gravity="center"
-                            android:text="ACCEPT"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/rectangle_1"
-                            android:layout_width="96dp"
-                            android:layout_height="19dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginLeft="255dp"
-                            android:layout_marginBottom="1dp"
-                            android:background="@drawable/reject"
-                            android:fontFamily="@font/nats"
-                            android:gravity="center"
-                            android:text="REJECT"
-                            android:textAlignment="center"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
+                <!-- Dynamic content will be loaded here by the adapter -->
 
             </LinearLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>
-
-    <!-- Bottom Navigation -->
 </RelativeLayout>
