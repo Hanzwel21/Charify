@@ -2,14 +2,12 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDEDED"
+    android:background="#F2F2F2"
     android:fillViewport="true">
-
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <!-- Top Bar -->
         <LinearLayout
@@ -20,24 +18,22 @@
             android:padding="12dp"
             android:gravity="center_vertical">
 
-
             <ImageButton
                 android:id="@+id/back_button"
                 android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_height="31dp"
                 android:background="@null"
-                android:src="@drawable/chevron_left"
-                android:contentDescription="Back" />
-
+                android:contentDescription="Back"
+                android:src="@drawable/chevron_left" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:src="@drawable/charify_word"
-                android:contentDescription="Charify Logo" />
+                android:contentDescription="Charify Logo"
+                android:elevation="6dp" />
         </LinearLayout>
-
 
         <!-- Content Section -->
         <LinearLayout
@@ -47,18 +43,16 @@
             android:padding="20dp"
             android:layout_marginTop="60dp">
 
-
-            <!-- Title -->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="EDUCATION"
+                android:layout_width="183dp"
+                android:layout_height="51dp"
                 android:layout_marginLeft="115dp"
-                android:textSize="24sp"
-                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nats"
+                android:text="EDUCATION"
                 android:textColor="#1A1A1A"
-                android:layout_marginBottom="10dp"/>
-
+                android:textSize="34sp"
+                android:textStyle="bold" />
 
             <!-- Amount Input -->
             <LinearLayout
@@ -68,27 +62,26 @@
                 android:gravity="center_vertical"
                 android:layout_marginBottom="16dp">
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="₱"
                     android:textSize="20sp"
                     android:textColor="#000000"
-                    android:layout_marginEnd="8dp"/>
-
+                    android:layout_marginEnd="8dp" />
 
                 <EditText
                     android:id="@+id/amount_input"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@drawable/donate"
+                    android:fontFamily="@font/nats"
+                    android:textSize="18sp"
                     android:hint="Enter Amount"
                     android:inputType="numberDecimal"
-                    android:background="@android:drawable/edit_text"
-                    android:padding="10dp"/>
+                    android:padding="10dp" />
             </LinearLayout>
-
 
             <!-- Payment Buttons -->
             <LinearLayout
@@ -100,60 +93,84 @@
 
 
                 <Button
+                    android:id="@+id/gcash_button"
                     android:layout_width="0dp"
+                    android:layout_height="67dp"
                     android:layout_weight="1"
-                    android:layout_height="48dp"
+                    android:background="@drawable/gcashbg1"
+                    android:drawableLeft="@drawable/gcash_icon_48x48"
+                    android:drawablePadding="0dp"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
                     android:text="GCASH"
-                    android:backgroundTint="#057AFF"
-                    android:textColor="#FFFFFF"/>
-
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    android:fontFamily="@font/nats" />
 
                 <Space
                     android:layout_width="10dp"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content" />
 
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="48dp"
-                    android:text="maya"
-                    android:backgroundTint="#000000"
-                    android:textColor="#FFFFFF"/>
+                <ImageButton
+                    android:layout_width="181dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="Maya Button"
+                    android:padding="0dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/mayalogo" />
             </LinearLayout>
 
+            <!-- Support Info -->
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/credit"
+                android:drawableLeft="@drawable/credit_card_48"
+                android:drawablePadding="0dp"
+                android:fontFamily="@font/nats"
+                android:paddingStart="84dp"
+                android:paddingEnd="24dp"
                 android:text="CREDIT/DEBIT"
-                android:backgroundTint="#B71C1C"
                 android:textColor="#FFFFFF"
-                android:layout_marginBottom="20dp"/>
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
-
-            <!-- Support Info -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:lineSpacingExtra="6dp"
                 android:text="Your support will help:\n\n• Build and renovate classrooms in underserved areas\n• Provide essential learning materials such as books, uniforms, and supplies\n• Train teachers and improve local teaching programs\n• Offer scholarships to children in extreme poverty\n• Create safe learning environments for girls and marginalized groups"
-                android:textSize="14sp"
                 android:textColor="#333333"
-                android:lineSpacingExtra="6dp"/>
-
-
+                android:textSize="14sp" />
         </LinearLayout>
 
-
-        <!-- Bottom Image -->
-        <ImageView
+        <!-- Bottom Image with Fade Transition -->
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_alignParentBottom="true"
-            android:contentDescription="Classroom"
-            android:scaleType="centerCrop"
-            android:src="@drawable/educationimg" />
+            android:layout_marginTop="549dp">
 
+            <!-- Background Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/educ_1"
+                android:contentDescription="Classroom" />
+
+            <!-- Gray to transparent gradient -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="139dp"
+                android:layout_gravity="top"
+                android:background="@drawable/education_img_fade" />
+        </FrameLayout>
 
     </RelativeLayout>
 </ScrollView>
