@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/settings"
+        android:layout_width="420dp"
+        android:layout_height="1303dp"
+        android:background="@drawable/logout1"
+        android:clipToOutline="true"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-369dp" >
+
+        <View
+            android:id="@+id/hmebttnbg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="89dp"
+            android:background="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/charify_bttn"
+            android:layout_width="150dp"
+            android:layout_height="129dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="132dp"
+            android:layout_marginBottom="71dp"
+            android:foregroundGravity="center"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="Charify Word Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/charify_word" />
+
+        <ImageView
+            android:id="@+id/charify_ogo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="156dp"
+            android:contentDescription="Charify logo"
+            android:src="@drawable/gear_black" />
+
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="362dp"
+            android:layout_height="401dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="630dp"
+            android:background="@drawable/bgsquarewhite" />
+
+        <ImageView
+            android:id="@+id/charify_logo"
+            android:layout_width="215dp"
+            android:layout_height="108dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="93dp"
+            android:layout_marginBottom="689dp"
+            android:contentDescription="Charify logo"
+            android:src="@drawable/charify_two" />
+
+        <ImageView
+            android:id="@+id/settinglogout"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="421dp"
+            android:layout_marginEnd="149dp"
+            android:layout_marginBottom="772dp"
+            android:contentDescription="Charify logo"
+            android:src="@drawable/gear_black" />
+
+        <ImageView
+            android:id="@+id/image_2025_"
+            android:layout_width="161dp"
+            android:layout_height="161dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="640dp"
+            android:background="@drawable/exit" />
+
+        <TextView
+            android:layout_width="301dp"
+            android:layout_height="322dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="206dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/nats"
+            android:text="Oh no! You're leaving...                         Are You Sure?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/logout_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="84dp"
+            android:layout_marginTop="919dp"
+            android:background="@drawable/logouticon" />
+
+        <RelativeLayout
+            android:id="@+id/logout_button"
+            android:layout_width="194dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="121dp"
+            android:layout_marginTop="905dp"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <View
+                android:id="@+id/logoutbg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/logout_bggrn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Logout"
+                android:layout_marginTop="-8dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/nats"
+                android:gravity="center"
+                android:elevation="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cancel_button"
+            android:layout_width="194dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="121dp"
+            android:layout_marginTop="951dp"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <View
+                android:id="@+id/cancelbg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cancelbg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:layout_marginTop="-8dp"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/nats"
+                android:gravity="center"
+                android:elevation="10dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
