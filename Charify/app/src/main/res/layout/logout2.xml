@@ -7,21 +7,23 @@
 
     <RelativeLayout
         android:id="@+id/settings"
-        android:layout_width="420dp"
-        android:layout_height="1303dp"
-        android:background="@drawable/logout1"
+        android:layout_width="412dp"
+        android:layout_height="848dp"
+        android:background="@drawable/white_background"
         android:clipToOutline="true"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="-369dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <View
             android:id="@+id/hmebttnbg"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="99dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="89dp"
+            android:layout_marginBottom="1dp"
             android:background="@drawable/home" />
+
+
 
         <ImageButton
             android:id="@+id/charify_bttn"
@@ -29,12 +31,12 @@
             android:layout_height="129dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="132dp"
-            android:layout_marginBottom="71dp"
-            android:foregroundGravity="center"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="-17dp"
             android:background="@android:color/transparent"
             android:clickable="true"
             android:contentDescription="Charify Word Logo"
+            android:foregroundGravity="center"
             android:scaleType="fitCenter"
             android:src="@drawable/charify_word" />
 
@@ -42,9 +44,13 @@
             android:id="@+id/charify_ogo"
             android:layout_width="110dp"
             android:layout_height="110dp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="164dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="156dp"
+            android:layout_marginEnd="147dp"
+            android:layout_marginBottom="660dp"
             android:contentDescription="Charify logo"
             android:src="@drawable/gear_black" />
 
@@ -54,8 +60,8 @@
             android:layout_height="401dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="630dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="296dp"
             android:background="@drawable/bgsquarewhite" />
 
         <ImageView
@@ -65,27 +71,12 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="111dp"
+            android:layout_marginStart="112dp"
             android:layout_marginTop="400dp"
-            android:layout_marginEnd="93dp"
-            android:layout_marginBottom="689dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="583dp"
             android:contentDescription="Charify logo"
             android:src="@drawable/charify_two" />
-
-        <ImageView
-            android:id="@+id/settinglogout"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="161dp"
-            android:layout_marginTop="421dp"
-            android:layout_marginEnd="149dp"
-            android:layout_marginBottom="772dp"
-            android:contentDescription="Charify logo"
-            android:src="@drawable/gear_black" />
 
         <ImageView
             android:id="@+id/image_2025_"
@@ -93,26 +84,29 @@
             android:layout_height="161dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="138dp"
-            android:layout_marginTop="640dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="298dp"
             android:background="@drawable/exit" />
 
         <TextView
-            android:layout_width="301dp"
-            android:layout_height="322dp"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="350dp"
-            android:layout_marginEnd="53dp"
-            android:layout_marginBottom="183dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="453dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="243dp"
             android:elevation="10dp"
             android:fontFamily="@font/nats"
-            android:text="You Have Successfully Logged Out. Thank You!"
+            android:text="Log Out Successfull, Thank You!"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
+
 
 
     </RelativeLayout>
